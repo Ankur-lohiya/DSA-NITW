@@ -1,3 +1,9 @@
+/*
+Given a number n, generate all distinct ways to write n as the sum of positive integers. 
+For example, with n = 4, 
+the options are 4, 3 + 1, 2 + 2, 2 + 1 + 1, and 1 + 1 + 1 + 1.
+*/
+
 #include <bits/stdc++.h> 
 
 using namespace std; 
