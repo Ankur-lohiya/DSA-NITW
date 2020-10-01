@@ -4,19 +4,20 @@
 
 using namespace std;
 
+int min(int a[],int i,int n)
+{
+    if(i==n)
+    return i;
+    int k = min(a,i+1,n);
+    return (a[k]<a[i])?k:i;
+}
 
 void Recursive_SelectionSort(int a[],int i,int n)
 {
     if(i==n)
     return;
     
-    int k = i;
-    
-    for(int j=i;j<n;j++)
-    {
-        if(a[j]<a[k])
-        k = j;
-    }
+    int k = min(a,i,n-1);
     if(k!=i)
     {
         int t = a[i];
